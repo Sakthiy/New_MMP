@@ -86,7 +86,7 @@ class _MMPState extends State<MMP> {
                         isExpanded: true,
                         iconSize: 36,
                         icon: Icon(Icons.arrow_drop_down_rounded),
-                        items: items.map(buildMenuItem).toList(),
+                        items: district[]
                         onChanged: (value) => setState(
                           () => this.value = value,
                         ),
