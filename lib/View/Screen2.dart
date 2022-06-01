@@ -81,12 +81,12 @@ class _MMPState extends State<MMP> {
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: Colors.black, width: 2)),
                     child: DropdownButtonHideUnderline(
-                      child: DropdownButton<DistrictName>(
+                      child: DropdownButton<String>(
                         value: value,
                         isExpanded: true,
                         iconSize: 36,
                         icon: Icon(Icons.arrow_drop_down_rounded),
-                        items: district[]
+                        items: items.map(buildMenuItem).toList(),
                         onChanged: (value) => setState(
                           () => this.value = value,
                         ),
